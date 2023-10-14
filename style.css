@@ -5,27 +5,49 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 .App-menu{
     width: 98%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .shapes-section{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 50%;
 }
+
+.hamburger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    /* width: var(--button-width, var(--default-button-size));
+    height: var(--button-height, var(--default-button-size));
+    box-sizing: border-box; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d6;
+    border-radius: .5rem;
+    /* cursor: pointer;
+    background-color: var(--button-bg, var(--island-bg-color));
+    color: var(--button-color, var(--text-primary-color));*/
+    background-color: rgba(255, 255, 255, .96);
+    width: 2.25rem; 
+    height: 2.25rem;
+
+}
+
 .Island-app-toolbar{
-    padding: 1px;
-    width:80%;
+    padding: 10px;
+    width:90%;
     margin: auto;
     margin-top:2%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    border-radius: .5rem;
     box-shadow: 0px 7px 14px rgba(0, 0, 0, .05), 0px 0px 3.12708px rgba(0, 0, 0, .0798), 0px 0px .931014px rgba(0, 0, 0, .1702);
 
 }
@@ -33,9 +55,6 @@
     display: flex;
     justify-content: space-between;
     
-}
-.lock-icon{
-    width:1.25rem;
 }
 
 .App-toolbar__divider{
@@ -47,19 +66,80 @@
 }
 
 .ToolIcon__icon{
+    width:2.5rem;
+    /* border:1px solid blue; */
+    box-sizing: border-box;
+    position: relative;
+
+    height: 1.5rem;
+    border-radius:10px;
+   
+    
+}
+.ToolIcon__icon:hover{
+    background-color: lightslategray;
+}
+
+.ToolIcon__icon svg{
     width:1.25rem;
+    
+}
+
+.ToolIcon__keybinding{
+    /* border:1px solid black; */
+    position: absolute;
+    bottom:1px;
+    font-size: .625rem;
+    color: #b8b8b8;
+    
+    
+}
+
+.HintViewer{
+    /* border:1px solid green; */
+    width:90%;
+    margin: auto;
+    text-align: center;
+    margin-top:0.5rem;
+    color:#b8b8b8;
 }
 
 .more-tools-btn{
     width:1.25rem;
+    background-color: rgba(255, 255, 255, .96);
+    border:none;
 }
 
 .live-collab-btn{
-    background-color: red;
+    background-color:#6965db;
+    color:white;
+    padding: .525rem;
+    display: flex;
 
-    width: 1.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 8px;
+    border: none;
 }
 
 .library-trigger{
+    
+    border:1px solid #d6d6d6;
+    display: flex;
+    width:auto;
+    height: 2.25rem;
+    padding: .625rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: .75rem;
+    border-radius: .5rem;
+    
+    
+}
+.library-text{
+    color:#3d3d3d;
+}
+.library-trigger>div>svg{
     width: 1.25rem;
 }
