@@ -12,13 +12,14 @@
     /* border: 1px solid blue; */
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .shapes-section{
     /* border: 2px solid red; */
     width: 50%;
+    margin: auto;
 }
 
 .hamburger-menu{
@@ -110,6 +111,12 @@
     border:none;
 }
 
+.app-menu-third-column{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 9.5%;
+    justify-content: space-between;
+}
 .live-collab-btn{
     background-color:#6965db;
     color:white;
