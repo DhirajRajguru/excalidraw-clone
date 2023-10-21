@@ -16,7 +16,8 @@
 .App-menu{
     width: 98%;
     /* border: 1px solid blue; */
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,27 +85,27 @@
     box-sizing: border-box;
     position: relative;
     
-    height: 1.5rem;
-    border-radius:10px;
+    /* height: 1.5rem; */
+    border-radius:0.3rem;
     background-color: transparent ;
   
     border:none;
-      
+    padding: 5px 0px;
+   
 }
 .ToolIcon__icon:hover{
-    background-color: lightslategray;
+    background-color: rgb(213, 217, 219);
     
     cursor: pointer;
 }
 
 .active{
-    background-color: gold;
-    color:silver;
+    background-color:rgb(139, 139, 223);
+    color:white;
 }
 
 .ToolIcon__icon svg{
     width:1.25rem;
-    
 }
     
 
@@ -180,13 +181,57 @@
     font-size: 30px;
 }
 
-
-.bottom>.option{
+.bottom{
     position: absolute;
     z-index:200;
     left:30px;
-    bottom:30px;
+    bottom:20px;
+    display: flex;
+    gap: 11px;
 }
+.bottom>.option{
+    background-color: #d1d1f2;
+    border-radius: 0.3rem;
+    
+}
+.option>button{
+    border:none;
+    background-color: transparent;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.zoom{
+    
+    padding:4px 8px;
+    background-color: #d1d1f2;
+    border-radius: 0.3rem;
+}
+.zoom>button{
+    border: none ;
+    padding: 4px 6px; 
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.bottom-right{
+    position: absolute;
+    z-index:200;
+    right:30px;
+    bottom:20px;
+    display: flex;
+    /* border: 3px solid red; */
+    gap:10px;
+    
+    
+}
+.bottom-right>button{
+    padding: 4px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
 
 
 

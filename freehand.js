@@ -14,7 +14,7 @@ colorPicker.addEventListener("change", () => {
 
     drawingColor = colorPicker.value ;
     c.strokeStyle = drawingColor;
-    console.log(drawingColor);
+    // console.log(drawingColor);
 });
 
 pencil.addEventListener("click", onPencilClick) ;
