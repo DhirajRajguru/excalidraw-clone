@@ -11,8 +11,16 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -24,57 +32,91 @@
   <body>
     <div id="root">
       <!-- <header> -->
-        <div class="sidebar">
-          <div class="dropdown">
-            <button id="clear">                           
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="header-toolbar options" id="actionbuttons">
-          <button id="lock">
-            <i class="fa-solid fa-lock-open"></i>
-          </button>
-          <span id="vertical-line"class="vertical-line"></span>
-          <button id="hand"><i class="fa-regular fa-hand"></i></button>
-          <button class="btn" id="rectangle" onclick="onActionClick(this);toggleMenu()">
-            <i class="fa-regular fa-square"></i>
-          </button>
-          <button><i class="fa-regular fa-square sqaure"></i></button>
-          <button class="btn" id="circle" onclick="onActionClick(this);toggleMenu()">
-            <i class="fa-regular fa-circle"></i>
-          </button>
-          <button id="arrow"><i class="fa-solid fa-arrow-right"></i></button>
-          <button class="btn" id="line" onclick="onActionClick(this);toggleMenu()">
-            <i class="fa-solid fa-minus"></i>
-          </button>
-          <button class="btn" id="freehand" onclick="onActionClick(this);toggleMenu()">
-            <i class="fa-solid fa-pencil" id="pencil"></i>
-          </button>
-          <!-- <input type="color" id="color-picker" /> -->
-          <button id="textBox"><i class="fa-solid fa-a"></i></button>
-          <button><i class="fa-regular fa-image"></i></button>
-          <button class="btn" id="eraser" onclick="onActionClick(this);">
-            <i class="fa-solid fa-eraser"></i>
-          </button>
-          <span class="vertical-line"></span>
-          <button><i class="fa-solid fa-shapes"></i></button>
-        </div>
-        
-        <div class="header-right">
-
-        <div class="people" >
-            <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="9" cy="7" r="4"></circle><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path></g></svg>
-
-            <!-- <i class="fa-solid fa-person"></i> -->
-        </div>
-
-          <button class="library-btn">
-            <i class="fa-solid fa-book-open"></i
-            ><span class="Library"> Library</span>
+      <div class="sidebar">
+        <div class="dropdown">
+          <button id="clear">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
+      </div>
+
+      <div class="header-toolbar options" id="actionbuttons">
+        <button id="lock">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+        <span id="vertical-line" class="vertical-line"></span>
+        <button id="hand"><i class="fa-regular fa-hand"></i></button>
+        <button
+          class="btn"
+          id="rectangle"
+          onclick="onActionClick(this);toggleMenu()"
+        >
+          <i class="fa-regular fa-square"></i>
+        </button>
+        <button><i class="fa-regular fa-square sqaure"></i></button>
+        <button
+          class="btn"
+          id="circle"
+          onclick="onActionClick(this);toggleMenu()"
+        >
+          <i class="fa-regular fa-circle"></i>
+        </button>
+        <button id="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        <button
+          class="btn"
+          id="line"
+          onclick="onActionClick(this);toggleMenu()"
+        >
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button
+          class="btn"
+          id="freehand"
+          onclick="onActionClick(this);toggleMenu()"
+        >
+          <i class="fa-solid fa-pencil" id="pencil"></i>
+        </button>
+        <!-- <input type="color" id="color-picker" /> -->
+        <button id="textBox"><i class="fa-solid fa-a"></i></button>
+        <button><i class="fa-regular fa-image"></i></button>
+        <button class="btn" id="eraser" onclick="onActionClick(this);">
+          <i class="fa-solid fa-eraser"></i>
+        </button>
+        <span class="vertical-line"></span>
+        <button><i class="fa-solid fa-shapes"></i></button>
+      </div>
+
+      <div class="header-right">
+        <div class="people">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+            viewBox="0 0 24 24"
+            class=""
+            fill="none"
+            stroke-width="2"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <g stroke-width="1.5">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+            </g>
+          </svg>
+
+          <!-- <i class="fa-solid fa-person"></i> -->
+        </div>
+
+        <button class="library-btn">
+          <i class="fa-solid fa-book-open"></i
+          ><span class="Library"> Library</span>
+        </button>
+      </div>
       <!-- </header> -->
       <canvas id="canvas"></canvas>
       <footer>
@@ -85,8 +127,9 @@
                 <i class="fa-solid fa-minus"></i>
               </div>
             </button>
+
             <button class="screen-size-perc">
-              <div>300%</div>
+              <div>100%</div>
             </button>
             <button class="zoom-in">
               <i class="fa-solid fa-plus"></i>
@@ -121,17 +164,23 @@
         </div>
         <div class="footer-right">
           <div class="class-shield">
-            <div class="shield-image"><i Style="color:#6965db"class="fa-solid fa-shield"></i></div>
+            <div class="shield-image">
+              <i Style="color:#6965db" class="fa-solid fa-shield">
+                 </i>
+            </div>
           </div>
 
           <button class="question-image">
-            <i class="fa-solid fa-circle-question fa-xl" style="color: #000000;"></i>
+            <i
+              class="fa-solid fa-circle-question fa-xl"
+              style="color: #000000"
+            ></i>
           </button>
         </div>
       </footer>
     </div>
-    
-     <script src="undoredo.js"></script>
+
+    <script src="undoredo.js"></script>
     <script src="state.js"></script>
     <script src="drawing.js"></script>
   </body>
