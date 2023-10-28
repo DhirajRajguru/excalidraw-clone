@@ -134,7 +134,21 @@ i {
   background-color: rgb(243, 239, 239);
   cursor: pointer;
 }
-.people > i {
+
+.people{
+    width:2.5rem;
+    background-color: #6965db;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.people>svg{
+    width:1.5rem;
+  color: white;
+  padding: 2px;
+  
+}
+/* .people > i {
   font-size: 20px;
   color: white;
   border: 1px solid;
@@ -146,7 +160,7 @@ i {
 .people > i:hover {
   background-color: #605cdb;
   cursor: pointer;
-}
+} */
 .library-btn {
   border: none;
 }
